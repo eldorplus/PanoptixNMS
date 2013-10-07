@@ -2,11 +2,11 @@
 <?php
 
 /**
- * Observium
+ * PanoptixNMS
  *
- *   This file is part of Observium.
+ *   This file is part of PanoptixNMS.
  *
- * @package    observium
+ * @package    panoptixnms
  * @subpackage poller
  * @author     Adam Armstrong <adama@memetic.org>
  * @copyright  (C) 2006 - 2012 Adam Armstrong
@@ -22,7 +22,7 @@ include("includes/functions.php");
 include("includes/polling/functions.inc.php");
 
 $poller_start = utime();
-echo("Observium Poller v".$config['version']."\n\n");
+echo("PanoptixNMS Poller v".$config['version']."\n\n");
 
 $options = getopt("h:m:i:n:r::d::a::");
 

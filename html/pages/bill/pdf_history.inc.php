@@ -103,7 +103,7 @@
     $res .= "&x=1190&y=250";
     $res .= "&from=".$from."&to=".$to;
     if (!bill_permitted($bill_id)) {
-      $res = "images/observium-logo.png";
+      $res = "images/panoptixnms-logo.png";
     }
     return $res;
   }
@@ -217,7 +217,7 @@
   }
 
   // Html template
-  $logo        = $pdf->serializeTCPDFtagParameters(array('images/observium-logo.png', 15, 18, 100, '', '', 'www.observium.org', 'T'));
+  $logo        = $pdf->serializeTCPDFtagParameters(array('images/panoptixnms-logo.png', 15, 18, 100, '', '', 'www.panoptixnms.org', 'T'));
   $html       .= "<tcpdf method=\"Image\" params=\"".$logo."\" />";
   $html       .= "<h1 class=\"right\">Billing Report</h1>";
   $html       .= "<p></p>";

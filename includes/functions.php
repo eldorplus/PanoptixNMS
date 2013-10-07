@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Observium
+ * PanoptixNMS
  *
- *   This file is part of Observium.
+ *   This file is part of PanoptixNMS.
  *
- * @package    observium
+ * @package    panoptixnms
  * @subpackage functions
  * @author     Adam Armstrong <adama@memetic.org>
  * @copyright  (C) 2006 - 2012 Adam Armstrong
@@ -17,7 +17,7 @@
 include_once("Net/IPv4.php");
 include_once("Net/IPv6.php");
 
-// Observium Includes
+// PanoptixNMS Includes
 
 include_once($config['install_dir'] . "/includes/common.php");
 include_once($config['install_dir'] . "/includes/rrdtool.inc.php");
@@ -667,7 +667,7 @@ function notify($device,$title,$message)
         $mail->Hostname = php_uname('n');
         if (empty($config['email_from']))
         {
-          $config['email_from'] = '"Observium" <observium@'.php_uname('n').'>'; // Default "From:"
+          $config['email_from'] = '"PanoptixNMS" <panoptixnms@'.php_uname('n').'>'; // Default "From:"
         }
         foreach (parse_email($config['email_from']) as $from => $from_name)
         {
@@ -675,7 +675,7 @@ function notify($device,$title,$message)
         }
         foreach ($emails as $email => $email_name) { $mail->AddAddress($email, $email_name); } // To:
         $mail->Subject = $title; // Subject:
-        $mail->XMailer = 'Observium ' . $config['version']; // X-Mailer:
+        $mail->XMailer = 'PanoptixNMS ' . $config['version']; // X-Mailer:
         $mail->CharSet = 'utf-8';
         $mail->WordWrap = 76;
         $mail->Body = $message_header . $message . $message_footer;

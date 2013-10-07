@@ -111,27 +111,27 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	/**
 	 * document creator
 	 */
-	define ('PDF_CREATOR', 'Observium');
+	define ('PDF_CREATOR', 'PanoptixNMS');
 
 	/**
 	 * document author
 	 */
-	define ('PDF_AUTHOR', 'Observium');
+	define ('PDF_AUTHOR', 'PanoptixNMS');
 
 	/**
 	 * header title
 	 */
-	define ('PDF_HEADER_TITLE', 'Observium');
+	define ('PDF_HEADER_TITLE', 'PanoptixNMS');
 
 	/**
 	 * header description string
 	 */
-	define ('PDF_HEADER_STRING', "Observium");
+	define ('PDF_HEADER_STRING', "PanoptixNMS");
 
 	/**
 	 * image logo
 	 */
-	define ('PDF_HEADER_LOGO', 'observium-logo.png');
+	define ('PDF_HEADER_LOGO', 'panoptixnms-logo.png');
 
 	/**
 	 * header logo image width [mm]

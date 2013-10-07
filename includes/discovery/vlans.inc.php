@@ -22,8 +22,8 @@ foreach ($device['vlans'] as $domain_id => $vlans)
   {
   // Pull Tables for this VLAN
 
-    #/usr/bin/snmpbulkwalk -v2c -c kglk5g3l454@988  -OQUs  -m BRIDGE-MIB -M /opt/observium/mibs/ udp:sw2.ahf:161 dot1dStpPortEntry
-    #/usr/bin/snmpbulkwalk -v2c -c kglk5g3l454@988  -OQUs  -m BRIDGE-MIB -M /opt/observium/mibs/ udp:sw2.ahf:161 dot1dBasePortEntry
+    #/usr/bin/snmpbulkwalk -v2c -c kglk5g3l454@988  -OQUs  -m BRIDGE-MIB -M /opt/panoptixnms/mibs/ udp:sw2.ahf:161 dot1dStpPortEntry
+    #/usr/bin/snmpbulkwalk -v2c -c kglk5g3l454@988  -OQUs  -m BRIDGE-MIB -M /opt/panoptixnms/mibs/ udp:sw2.ahf:161 dot1dBasePortEntry
 
     // FIXME - do this only when vlan type == ethernet?
     if (is_numeric($vlan_id) && ($vlan_id <1002 || $vlan_id > 1105)) // Ignore reserved VLAN IDs

@@ -93,7 +93,7 @@ function snmp_get($device, $oid, $options = NULL, $mib = NULL, $mibdir = NULL)
   if (strstr($oid,' '))
   {
     echo("BUG: snmp_get called for multiple OIDs: $oid\n");
-    echo("Please report this to the Observium team.");
+    echo("Please report this to the PanoptixNMS team.");
   }
 
   $cmd  = $config['snmpget'];
@@ -776,7 +776,7 @@ function snmp_gen_auth (&$device)
     if ($device['authlevel'] === "noAuthNoPriv")
     {
       // We have to provide a username anyway (see Net-SNMP doc)
-      $cmd .= " -u observium";
+      $cmd .= " -u panoptixnms";
     }
     elseif ($device['authlevel'] === "authNoPriv")
     {

@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Observium Network Management and Monitoring System
- * Copyright (C) 2006-2012, Adam Armstrong - http://www.observium.org
+ * PanoptixNMS Network Management and Monitoring System
+ * Copyright (C) 2006-2012, Adam Armstrong - http://www.panoptixnms.org
  *
  * @package alerting
  * @author Adam Armstrong <adama@memetic.org>

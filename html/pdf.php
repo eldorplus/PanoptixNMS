@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Observium
+ * PanoptixNMS
  *
- *   This file is part of Observium.
+ *   This file is part of PanoptixNMS.
  *
- * @package    observium
+ * @package    panoptixnms
  * @subpackage billing
  * @author     Adam Armstrong <adama@memetic.org>
  * @copyright  (C) 2006 - 2012 Adam Armstrong
@@ -27,7 +27,7 @@ if (strpos($_SERVER['REQUEST_URI'], "debug"))
     ini_set('error_reporting', 0);
 }
 
-$filename = "observium-report.pdf";
+$filename = "panoptixnms-report.pdf";
 $html     = "";
 $type     = (isset($_GET['type']) ? $_GET['type'] : "");
 $report   = (isset($_GET['report']) ? $_GET['report'] : "");
@@ -54,7 +54,7 @@ class ObsPDF extends TCPDF
     // Set Font
     $this->SetFont('helvetica', 'N', 8);
     // Set Footer text
-    $this->Cell(0, 0, 'Created by Observium (www.observium.org)', 0, false, 'L', 0, 'http://www.observium.org/', 0, false, 'M', 'M');
+    $this->Cell(0, 0, 'Created by PanoptixNMS (www.panoptixnms.org)', 0, false, 'L', 0, 'http://www.panoptixnms.org/', 0, false, 'M', 'M');
     $this->Cell(10, 0, 'Page '.$this->getAliasNumPAge().' of '.$this->getAliasNbPages(), 0, false, 'R', 0, '', 0, false, 'M', 'M');
   }
 }

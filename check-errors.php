@@ -2,11 +2,11 @@
 <?php
 
 /**
- * Observium
+ * PanoptixNMS
  *
- *   This file is part of Observium.
+ *   This file is part of PanoptixNMS.
  *
- * @package    observium
+ * @package    panoptixnms
  * @subpackage alerts
  * @author     Adam Armstrong <adama@memetic.org>
  * @copyright  (C) 2006 - 2012 Adam Armstrong
@@ -52,7 +52,7 @@ if (is_array($errored))
     $i++;
   }
   // Send the alert email
-  notify($device, "Observium detected errors on $i interface" . ($i != 1 ? 's' : ''), $msg);
+  notify($device, "PanoptixNMS detected errors on $i interface" . ($i != 1 ? 's' : ''), $msg);
 }
 
 echo("$errored interfaces with errors over the past 5 minutes.\n");

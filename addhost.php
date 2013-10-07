@@ -2,11 +2,11 @@
 <?php
 
 /**
- * Observium
+ * PanoptixNMS
  *
- *   This file is part of Observium.
+ *   This file is part of PanoptixNMS.
  *
- * @package    observium
+ * @package    panoptixnms
  * @subpackage cli
  * @author     Adam Armstrong <adama@memetic.org>
  * @copyright  (C) 2006 - 2012 Adam Armstrong
@@ -36,7 +36,7 @@ if (!empty($argv[1]))
     // These values are the same as in defaults.inc.php
     $v3 = array(
       'authlevel'  => "noAuthNoPriv",
-      'authname'   => "observium",
+      'authname'   => "panoptixnms",
       'authpass'   => "",
       'authalgo'   => "MD5",
       'cryptopass' => "",
@@ -193,7 +193,7 @@ if (!empty($argv[1]))
 }
 
 print Console_Color::convert("
-Observium v".$config['version']." Add Host Tool
+PanoptixNMS v".$config['version']." Add Host Tool
 
 Usage (SNMPv1/2c): ./addhost.php <%Whostname%n> [community] [v1|v2c] [port] [" . implode("|",$config['snmp']['transports']) . "]
 Usage (SNMPv3)   :  Config Defaults : ./addhost.php <%Whostname%n> any v3 [user] [port] [" . implode("|",$config['snmp']['transports']) . "]

@@ -4,7 +4,7 @@ global $debug;
 
 if ($device['os_group'] == "unix")
 {
-  echo("Observium UNIX Agent: ");
+  echo("PanoptixNMS UNIX Agent: ");
 
   // FIXME - this should be in config and overridable in database
   $agent_port='6556';

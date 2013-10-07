@@ -1,7 +1,7 @@
 <?php
 
-/* Observium Network Management and Monitoring System
- * Copyright (C) 2006-2012, Observium Developers - http://www.observium.org
+/* PanoptixNMS Network Management and Monitoring System
+ * Copyright (C) 2006-2012, Observium Developers
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

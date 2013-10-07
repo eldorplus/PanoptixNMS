@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Observium Network Management and Monitoring System
- * Copyright (C) 2006-2011, Observium Developers - http://www.observium.org
+ * PanoptixNMS Network Management and Monitoring System
+ * Copyright (C) 2006-2011, Observium Developers
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -11,7 +11,7 @@
  *
  * See COPYING for more details.
  *
- * @package    observium
+ * @package    panoptixnms
  * @subpackage config
  * @author     Adam Armstrong <adama@memetic.org>
  * @copyright  (C) 2006 - 2012 Adam Armstrong
@@ -28,12 +28,12 @@ error_reporting(E_ERROR);
 // Default directories
 
 $config['temp_dir']      = "/tmp";
-$config['install_dir']   = "/opt/observium";
+$config['install_dir']   = "/opt/panoptixnms";
 $config['html_dir']      = $config['install_dir'] . "/html";
 $config['rrd_dir']       = $config['install_dir'] . "/rrd";
-$config['log_file']      = $config['install_dir'] . "/observium.log";
+$config['log_file']      = $config['install_dir'] . "/panoptixnms.log";
 
-// What is my own hostname (used so observium can identify its host in its own database)
+// What is my own hostname (used so panoptixnms can identify its host in its own database)
 $config['own_hostname'] = "localhost";
 
 // Location of executables
@@ -98,14 +98,14 @@ if (isset($_SERVER["SERVER_NAME"]) && isset($_SERVER["SERVER_PORT"]))
   }
 }
 
-$config['title_image']      = "images/observium-logo.png";
+$config['title_image']      = "images/panoptixnms-logo.png";
 $config['stylesheet']       = "css/styles.css";
 $config['mono_font']        = "DejaVuSansMono";
-$config['favicon']          = "images/observium-icon.png";
+$config['favicon']          = "images/panoptixnms-icon.png";
 $config['header_color']     = "#1F334E";
 $config['page_refresh']     = "300";  // Refresh the page every xx seconds, 0 to disable
 $config['front_page']       = "pages/front/default.php";
-$config['page_title_prefix'] = "Observium :: Network Observation and Monitoring";
+$config['page_title_prefix'] = "PanoptixNMS :: Network Observation and Monitoring";
 $config['timestamp_format'] = 'd-m-Y H:i:s';
 $config['page_gen']         = 1;
 $config['web_header']       = "header.inc.php";  # in html/includes
@@ -137,7 +137,7 @@ $config['snmp']['community'][0] = "public"; # Communities to try during adding h
 # SNMPv3 default settings
 # The array can be expanded to give another set of parameters
 $config['snmp']['v3'][0]['authlevel'] = "noAuthNoPriv";  # noAuthNoPriv | authNoPriv | authPriv
-$config['snmp']['v3'][0]['authname'] = "observium";      # User Name (required even for noAuthNoPriv)
+$config['snmp']['v3'][0]['authname'] = "panoptixnms";      # User Name (required even for noAuthNoPriv)
 $config['snmp']['v3'][0]['authpass'] = "";               # Auth Passphrase
 $config['snmp']['v3'][0]['authalgo'] = "MD5";            # MD5 | SHA
 $config['snmp']['v3'][0]['cryptopass'] = "";             # Privacy (Encryption) Passphrase
@@ -165,7 +165,7 @@ $config['discover_services']               = FALSE; // Autodiscover services via
 // Mailer backend Settings
 
 $config['email_backend']              = 'mail';               // Mail backend. Allowed: "mail" (PHP's built-in), "sendmail", "smtp".
-$config['email_from']                 = NULL;                 // Mail from. Default: "OBSERVIUM Network Monitor" <observium@`hostname`>
+$config['email_from']                 = NULL;                 // Mail from. Default: "OBSERVIUM Network Monitor" <panoptixnms@`hostname`>
 $config['email_sendmail_path']        = '/usr/sbin/sendmail'; // The location of the sendmail program.
 $config['email_smtp_host']            = 'localhost';          // Outgoing SMTP server name.
 $config['email_smtp_port']            = 25;                   // The port to connect.
@@ -365,8 +365,8 @@ $config['device_traffic_descr'][]  = '/dummy/';
 
 $config['irc_host'] = "chat.eu.freenode.net";
 $config['irc_port'] = 6667;
-$config['irc_nick'] = "Observium";
-$config['irc_chan'][] = "#observium";
+$config['irc_nick'] = "PanoptixNMS";
+$config['irc_chan'][] = "#panoptixnms";
 
 // Authentication
 
@@ -381,7 +381,7 @@ $config['auth_ldap_server'] = "ldap.yourserver.com";
 $config['auth_ldap_port']   = 389;
 $config['auth_ldap_prefix'] = "uid=";
 $config['auth_ldap_suffix'] = ",ou=People,dc=example,dc=com";
-$config['auth_ldap_group']  = "cn=observium,ou=groups,dc=example,dc=com";
+$config['auth_ldap_group']  = "cn=panoptixnms,ou=groups,dc=example,dc=com";
 
 $config['auth_ldap_groupbase'] = "ou=group,dc=example,dc=com";
 $config['auth_ldap_groups']['admin']['level'] = 10;

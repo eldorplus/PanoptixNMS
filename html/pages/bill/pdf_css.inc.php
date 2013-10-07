@@ -2,7 +2,7 @@
 
 $css = <<<EOF
 
-<!-- Observium PDF Billing Report Stylesheet //-->
+<!-- PanoptixNMS PDF Billing Report Stylesheet //-->
 
 <style>
 

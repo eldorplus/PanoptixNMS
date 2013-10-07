@@ -2,11 +2,11 @@
 <?php
 
 /**
- * Observium
+ * PanoptixNMS
  *
- *   This file is part of Observium.
+ *   This file is part of PanoptixNMS.
  *
- * @package    observium
+ * @package    panoptixnms
  * @subpackage discovery
  * @author     Adam Armstrong <adama@memetic.org>
  * @copyright  (C) 2006 - 2012 Adam Armstrong
@@ -24,13 +24,13 @@ include("includes/discovery/functions.inc.php");
 $start = utime();
 $runtime_stats = array();
 
-// Observium Device Discovery
+// PanoptixNMS Device Discovery
 
 $options = getopt("h:m:i:n:d::a::q");
 
 if (!isset($options['q']))
 {
-  echo("Observium v".$config['version']." Discovery\n\n");
+  echo("PanoptixNMS v".$config['version']." Discovery\n\n");
 }
 
 if (isset($options['h']))

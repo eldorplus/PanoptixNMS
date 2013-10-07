@@ -52,7 +52,7 @@ switch ($vars['protocol'])
     include('pages/routing/'.$vars['protocol'].'.inc.php');
     break;
   default:
-    echo("<h2>Error. Please report this to observium developers.</h2>");
+    echo("<h2>Error. Please report this to panoptixnms developers.</h2>");
     break;
 }
 

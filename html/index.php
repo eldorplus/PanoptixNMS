@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Observium
+ * PanoptixNMS
  *
- *   This file is part of Observium.
+ *   This file is part of PanoptixNMS.
  *
- * @package    observium
+ * @package    panoptixnms
  * @subpackage webinterface
  * @author     Adam Armstrong <adama@memetic.org>
  * @copyright  (C) 2006 - 2012 Adam Armstrong
@@ -268,7 +268,7 @@ $runtime_end = utime(); $runtime = $runtime_end - $runtime_start;
 $gentime = substr($runtime, 0, 5);
 
 echo('<br /> <br /> <br /> <br />  <div id="footer">' . (isset($config['footer']) ? $config['footer'] : ''));
-echo('<br />Powered by <a href="http://www.observium.org" target="_blank">Observium ' . $config['version']);
+echo('<br />Powered by <a href="http://www.panoptixnms.org" target="_blank">PanoptixNMS ' . $config['version']);
 
 echo('</a>. Copyright &copy; 2006-'. date("Y"). ' by Adam Armstrong. All rights reserved.');
 

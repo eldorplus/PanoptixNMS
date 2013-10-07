@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 # NS-ROOT-MIB::vsvrName."observium" = STRING: "observium"
 # NS-ROOT-MIB::vsvrIpAddress."observium" = IpAddress: 195.78.84.141

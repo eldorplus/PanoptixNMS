@@ -1163,7 +1163,7 @@ if (isset($config['rrdgraph_def_text']))
 
 if (!isset($config['log_file']))
 {
-  $config['log_file'] = $config['install_dir'] . "/observium.log";
+  $config['log_file'] = $config['install_dir'] . "/panoptixnms.log";
 }
 
 if (isset($config['cdp_autocreate']))
@@ -1184,14 +1184,14 @@ if (isset($_SERVER['HTTPS']))
 }
 
 // Connect to database
-$observium_link = mysql_pconnect($config['db_host'], $config['db_user'], $config['db_pass']);
-if (!$observium_link)
+$panoptixnms_link = mysql_pconnect($config['db_host'], $config['db_user'], $config['db_pass']);
+if (!$panoptixnms_link)
 {
         echo("<h2>Observer MySQL Error</h2>");
         echo(mysql_error());
         die;
 }
-$observium_db = mysql_select_db($config['db_name'], $observium_link);
+$panoptixnms_db = mysql_select_db($config['db_name'], $panoptixnms_link);
 
 if ($config['memcached']['enable'])
 {

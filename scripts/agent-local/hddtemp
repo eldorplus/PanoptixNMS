@@ -3,7 +3,7 @@
 # hddtemp sensor readings
 # needs hddtemp daemon listening on (at least) localhost
 # requires netcat to be installed and in the path
-# (c) 2012, Tom Laermans for Observium
+# (c) 2012, Tom Laermans
 
 echo '<<<hddtemp>>>'
 nc localhost 7634
